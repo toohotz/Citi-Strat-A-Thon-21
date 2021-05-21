@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Interstate-bold.ttf">
+            <string>Interstate-Bold</string>
+        </array>
+        <array key="Interstate-light.ttf">
+            <string>Interstate-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="GamePlanTableViewCell" customModule="FinancialGamePlan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect Your Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc9-cU-faH">
+                        <rect key="frame" x="65" y="30" width="297" height="16"/>
+                        <fontDescription key="fontDescription" name="Interstate-Bold" family="Interstate" pointSize="17"/>
+                        <color key="textColor" red="0.28495436909999999" green="0.42575430869999997" blue="0.62330812219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link everything in one place for a full financial picture." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4E-Gk-sF0">
+                        <rect key="frame" x="65" y="61" width="297" height="9.5"/>
+                        <fontDescription key="fontDescription" name="Interstate-Light" family="Interstate" pointSize="10"/>
+                        <color key="textColor" red="0.39960059520000002" green="0.39964884519999999" blue="0.39957275990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron" translatesAutoresizingMaskIntoConstraints="NO" id="yuk-rf-CUA">
+                        <rect key="frame" x="377" y="44.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="RA1-Eg-xY8"/>
+                            <constraint firstAttribute="width" constant="20" id="hOi-bk-Ztl"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connectAccount" translatesAutoresizingMaskIntoConstraints="NO" id="n5q-DV-5b0">
+                        <rect key="frame" x="20" y="20" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Yga-76-9rW"/>
+                            <constraint firstAttribute="width" secondItem="n5q-DV-5b0" secondAttribute="height" multiplier="1:1" id="smf-O9-qVH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n5q-DV-5b0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Ab8-AV-75U"/>
+                    <constraint firstItem="yuk-rf-CUA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BMZ-7J-nNk"/>
+                    <constraint firstItem="xc9-cU-faH" firstAttribute="leading" secondItem="n5q-DV-5b0" secondAttribute="trailing" constant="15" id="FLG-7i-oNc"/>
+                    <constraint firstItem="L4E-Gk-sF0" firstAttribute="top" secondItem="xc9-cU-faH" secondAttribute="bottom" constant="15" id="HqX-T5-lfN"/>
+                    <constraint firstItem="L4E-Gk-sF0" firstAttribute="leading" secondItem="xc9-cU-faH" secondAttribute="leading" id="KOa-9h-8mL"/>
+                    <constraint firstItem="yuk-rf-CUA" firstAttribute="leading" secondItem="L4E-Gk-sF0" secondAttribute="trailing" constant="15" id="Oab-GX-XBf"/>
+                    <constraint firstItem="n5q-DV-5b0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="QXg-dQ-sdd"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L4E-Gk-sF0" secondAttribute="bottom" constant="15" id="RAy-lM-yCY"/>
+                    <constraint firstAttribute="trailing" secondItem="yuk-rf-CUA" secondAttribute="trailing" constant="20" id="RNe-dy-wjz"/>
+                    <constraint firstItem="xc9-cU-faH" firstAttribute="top" secondItem="n5q-DV-5b0" secondAttribute="top" multiplier="1.5" id="Vj8-Px-zBv"/>
+                    <constraint firstItem="L4E-Gk-sF0" firstAttribute="trailing" secondItem="xc9-cU-faH" secondAttribute="trailing" id="hqz-IU-EoH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chevron" destination="yuk-rf-CUA" id="XNX-52-5QU"/>
+                <outlet property="iconImageView" destination="n5q-DV-5b0" id="Tjc-bj-kNm"/>
+                <outlet property="subtitleLabel" destination="L4E-Gk-sF0" id="cjQ-rN-dkf"/>
+                <outlet property="titleLabel" destination="xc9-cU-faH" id="46d-9J-Jg0"/>
+            </connections>
+            <point key="canvasLocation" x="222.46376811594206" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron" width="20" height="20"/>
+        <image name="connectAccount" width="27" height="19"/>
+    </resources>
+</document>
